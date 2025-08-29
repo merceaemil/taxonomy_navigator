@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/index.css" />                                                   
+    <title>Taxonomy Navigator Widget</title>
+    <script src="./dist/taxonomy-navigator.js"></script>
+    <style> 
+      body {
+        background-color: #fff;
+      }
+      h1 {text-align: center;} 
+
+      .container {
+        max-width: 1242px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .bg-white {
+        background-color: red !important;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div id="taxonomy-navigator"></div>
+    <script>
+      TaxonomyNavigator.render("#taxonomy-navigator", { dataUrl: './data.json' });
+    </script>
+  </div>
+</body>
+</html> 
+
+
+
+
+

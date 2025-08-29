@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Inter", sans-serif;
+  --font-mono: "Inter", sans-serif;
+}
+
+:root {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Inter", sans-serif;
+  --font-mono: "Inter", sans-serif;
+  --color-light: #ffffff;
+  --color-dark: #171717;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 39px;
+  line-height: 47px;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 33px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+input, select {
+  min-height: 51px;
+}
+
+select {
+  padding: 0 17.5px;
+  appearance: none;
+  -webkit-appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 17'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.792847 5.70767L2.20706 4.29346L7.99995 10.0864L13.7928 4.29346L15.2071 5.70767L7.99995 12.9148L0.792847 5.70767Z' fill='currentColor'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: calc(100% - 0.75rem) center !important;
+
+  &:focus-within {
+      background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 17'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.792847 11.2935L2.20706 12.7077L7.99995 6.91481L13.7928 12.7077L15.2071 11.2935L7.99995 4.08638L0.792847 11.2935Z' fill='currentColor'/%3E%3C/svg%3E");
+  }
+}
+
+.section-name-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+}
+
+.section-name {
+    /* text-orientation: sideways; */
+    position: sticky;
+    top: 20px;
+    margin: 20px 0px;
+    writing-mode: sideways-lr;
+
+    font-size: 14px;
+    height: min-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
