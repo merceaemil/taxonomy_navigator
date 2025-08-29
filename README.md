@@ -1,6 +1,6 @@
 # Interactive Data Structure Tool
   
-This is a project built with ViteJs and ExpressJs
+This is a project built with ViteJs and ExpressJs over NodeJS 20.18.1
 
 ## Project structure
   
